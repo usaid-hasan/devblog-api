@@ -1,0 +1,15 @@
+{
+  "exclude": ["node_modules", "dist"],
+  "include": ["src/**/*", "tests", "__tests__"],
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "module": "ES2022",
+    "target": "ES2022",
+    "baseUrl": ".",
+    "paths": {
+      "@/tests/*": ["./tests/*"],
+      "@/*": ["./src/*"]
+    },
+    "types": ["vite/client", "vitest/importMeta"]
+  }
+}
